@@ -11,6 +11,7 @@ export default class ITunesApi {
           return response.data;
         
         } catch (error) { 
+          console.log(error)
           return null;
         }
       }
