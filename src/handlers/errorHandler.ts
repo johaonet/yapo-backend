@@ -24,6 +24,7 @@ export function apiErrorHandler(
   message: string,
 ) {
   const error: object = { Message: message, Request: req, Stack: err };
+  console.log(error)
   winston.error(JSON.stringify(error));
   res.json({ Message: message });
 }
